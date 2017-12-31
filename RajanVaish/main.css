@@ -1,0 +1,296 @@
+
+
+/*  ==========================================================================
+    Author's custom styles
+    ========================================================================== */
+
+body{
+  font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, Tahoma, sans-serif; 
+  margin:1em;
+  max-width: 940px;
+  /*width: 940px;*/
+  /*background-color:#D9CE92;*/
+  /*color:#3D3535;*/
+}
+
+/*  ==========================================================================
+    General Rules
+  ========================================================================== */
+
+h3 {
+  margin:0;
+  font-size:1.3em;
+  line-height:1.5em;
+}
+
+a:link{
+  color:#61748C;
+  font-weight:bold;
+}
+
+a:visited{
+  color:#61748C;
+}
+
+a:hover, a:focus, a:active{
+  color:#800000;
+  background-color:#E3E0D1;
+}
+
+.active{
+  font-weight:bold;
+  color:#000000;
+}
+
+.inactive a{
+  color:#aaaaaa;
+  font-weight:normal !important;
+}
+
+.abstract, .artifacts, .tags{
+  font-size:0.8em;
+  line-height:1.5em;
+}
+
+
+/*  ==========================================================================
+    Left Sidebar 
+  ========================================================================== */
+#left{
+  margin: 0 0 1.5em 0;
+  /*max-width:200px; */
+  /*position: fixed;*/
+}
+
+#left .name-display {
+  margin-top: -0.5em;
+  /*font-family: 'Special Elite', cursive;*/
+  font-weight: bold;
+}
+
+#left .profile {
+  /*width: 18em;*/
+  width: 100%;
+  max-width: 300px;
+}
+
+#last-update{
+  font-size:smaller;
+
+}
+
+
+#right{
+  max-width:600px;  
+  margin: 1.5em 0.5em 0 1.5em;
+/*  width:650px;*/
+}
+
+
+
+/*  ==========================================================================
+  Main Page 
+  ========================================================================== */
+/*
+#menu{
+  margin-top:0.5em;
+  margin-bottom:1.5em;
+}
+*/
+.section{
+  font-size:1.3em;
+  font-weight:bold;
+  margin-top:1.5em;
+  margin-bottom:0.5em;
+}
+
+#main{
+    
+}
+
+.news li , .past li{
+  padding: 0.5em;
+  font-size: 11pt;
+}
+
+.news li [class*="col-md"], .past li [class*="span"]{
+  min-height: 0; /* row-fluid has min-height of 30px. overriding that. */
+}
+
+.news li:nth-child(odd), .past li:nth-child(odd) {
+  background-color: #f6f6f6;
+}
+
+.news-date{
+  color: #777777;
+  font-size: 11pt;
+  padding: 10px 4px 10px 4px;
+}
+
+.news-content{
+  font-size: 11pt;
+  padding: 10px 4px 10px 4px;
+}
+
+.news .collapsed{
+  display: none;
+}
+
+#news-expand-button{
+  font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, Tahoma, sans-serif; 
+}
+
+.list ul{
+  margin-left: 0.5em;
+}
+
+.list li{
+  margin-left: -0.5em;
+  font-size:0.8em;
+  line-height: 1.5em;
+  list-style-type:none;
+}
+
+
+/*  ==========================================================================
+  Publications
+  ========================================================================== */
+
+.pub-section{
+  margin-left: 0;
+}
+
+.publication .author{
+  font-weight: bold;
+}
+
+.publication .title{
+  font-weight: bold;  
+  font-size: 15px;
+}
+
+.publication .venue{
+  font-style: italic;
+  margin-right: 5px;
+}
+
+.publication .toappear{
+  font-style: italic;
+  margin-right: 5px;
+}
+
+.publication .material{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.publication{
+  margin-left: 0;
+}
+
+.publication li {
+  line-height:18px;
+  margin-bottom: 14px;
+  /*margin-left:-10px;*/
+  font-size:12px;
+  list-style-type:none;
+}
+
+.award{
+  background-color: crimson;
+  color: #fff;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+/*  ==========================================================================
+  Projects 
+  ========================================================================== */
+
+#project-list, #cv-list{
+  margin-left:0px;
+  padding-left:5px;
+  list-style-type:none;
+}
+
+li{
+  margin-bottom:5px;
+}
+
+#project-list li:before, #cv-list li:before, .list li:before, .publication li:before{
+  /*content: "\00BB \0020";*/
+}
+
+/* PROJECTS PAGE */
+#project {
+  
+}
+
+.project-entry:hover {
+  background-color: #f8f8f8;
+}
+
+.project-entry {
+  /* image size */
+  clear: both;
+  min-height: 5em;
+  margin-bottom: 1.5em;
+}
+
+.project-entry h4 {
+  font-size: 1.2em;
+}
+
+.project-entry img{
+  width: 100%;
+  max-height: 7em;
+  /*max-height:160px;*/
+  /*margin-right:10px;
+  margin-top:25px;
+  margin-bottom:10px;*/
+  margin: 1em 0 0 0;
+  border-radius: 0.5em;
+  border: 0.1em solid #dddddd;
+  box-shadow: 0 0 0.1em 0.1em #dddddd;
+}
+
+.project-entry .project-left{
+  float:left;
+  text-align: center;
+}
+
+.project-entry .project-right{
+  float: left;
+  max-width: 430px;
+  margin-bottom: 1em;
+}
+
+.project-entry .author{
+  font-weight:bold;
+}
+
+/*  ==========================================================================
+  CV
+  ========================================================================== */
+
+.cv-content {
+  margin-right: 135px;
+  margin-top:1em;
+  margin-bottom:1em;  
+}
+
+.cv-margin {
+  font-size:smaller;
+  float: right;
+  margin-left: 1.5em;
+  padding-right: 0.5em;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
